@@ -6,7 +6,7 @@ import pandas as pd
 import datetime as dt
 #!which chromedriver
 # Setup splinter
-executable_path = {'executable_path': ChromeDriverManager().install()}
+executable_path = {'/Users/Emily/Documents/Class_data/mars/mission-to-mars/chromedriver': ChromeDriverManager().install()}
 browser = Browser('chrome', **executable_path, headless=False)
 def mars_news(browser):
 
@@ -81,7 +81,7 @@ def mars_facts():
     return df.to_html()
 def scrape_all():
     # Initiate headless driver for deployment
-    browser = Browser("chrome", executable_path="chromedriver", headless=True)
+    browser = Browser("chrome", executable_path="/Users/Emily/Documents/Class_data/mars/mission-to-mars/chromedriver", headless=True)
 
     news_title, news_paragraph = mars_news(browser)
 
