@@ -26,6 +26,7 @@
               <h2>Latest Mars News</h2>
               <h4 class="media-heading">{{ mars.news_title }}</h4>
               <p>{{ mars.news_paragraph }}</p>
+            <img src="../static/news.png">
             </div>
           </div>
         </div>
@@ -35,10 +36,10 @@
         <div class="col-md-8">
           <h2>Featured Mars Image</h2>
           <img
-            src="{{mars.featured_image }}"
+            src="{{ mars.featured_image }}"
             class="img-responsive"
             alt="Responsive image"
-          />
+          >
         </div>
         <div class="col-md-4">
           <!-- Mars Facts -->
